@@ -1,0 +1,8 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://manideep:Mani45deep@clusterwfbooking.sxn8c4u.mongodb.net/?retryWrites=true&w=majority
+      database: ClusterWFBooking
+server:
+  port: 8081
+

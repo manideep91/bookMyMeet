@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "388df468-9e2b-406a-a1cf-30c75f657c56",
+		"name": "WF_MeetingRoom_Booking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "620187"
+	},
+	"item": [
+		{
+			"name": "Create Employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n  \"name\": \"san\",\r\n  \"email\": \"san@gmail.com\",\r\n  \"department\": \"BIA\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Location",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Hyderabad 2\",\r\n  \"address\": \"Hyd 2\",\r\n  \"buildings\": [\r\n    {\r\n      \"name\": \"Tower 1\",\r\n      \"floors\": [\r\n        {\r\n          \"floorNumber\": 1,\r\n          \"rooms\": [\r\n            {\r\n              \"name\": \"Room Name 1\",\r\n              \"capacity\": 10\r\n            },\r\n            {\r\n              \"name\": \"Room Name 2\",\r\n              \"capacity\": 15\r\n            }\r\n          ]\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"name\": \"Tower 2\",\r\n      \"floors\": [\r\n        {\r\n          \"floorNumber\": 1,\r\n          \"rooms\": [\r\n            {\r\n              \"name\": \"Room Name 3\",\r\n              \"capacity\": 20\r\n            }\r\n          ]\r\n        }\r\n      ]\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/locations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"locations"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
